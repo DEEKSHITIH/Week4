@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+ background-color: rgb(36, 224, 8);
+}
+.container {
+    max-width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color:white
+   
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: rgb(228, 233, 234);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button {
+    background-color: rgb(11, 135, 244);
+    font-size: medium;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 50px;
+    
+}
+
+li {
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #e6950a;
+    background-color: rgb(4, 12, 248);
+    font-size: 50px;
+}
+h1{
+    background-color: rgb(243, 120, 4);
+    color: aliceblue;
+}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+
+<style>
+  .gallery-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .thumbnail {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .full-size-image {
+    display: none;
+    width: 1400px;
+    height: 800px;
+    margin-top: 20px;
+    border: 5px solid black;
+    text-align: center;
+    border-radius: 5%;
+  }
+  
+</style>
+</head>
+<body>
+
+<div class="gallery-container">
+  <!-- Thumbnails -->
+  <img class="thumbnail" src="https://th.bing.com/th/id/OIP.3YD6BYo7QXfw5Y5d_79tGwHaFj?rs=1&pid=ImgDetMain" alt="Thumbnail 1" onclick="showFullSize('image1')">
+  <img class="thumbnail" src="https://th.bing.com/th/id/OIP.rgPl5uUflVlLSVbfBLPXnAHaEK?w=1920&h=1080&rs=1&pid=ImgDetMain" alt="Thumbnail 2" onclick="showFullSize('image2')">
+  <img class="thumbnail" src="https://th.bing.com/th/id/OIP.5sZbfMMpXob_KmZ1g5q1dgHaE8?rs=1&pid=ImgDetMain" alt="Thumbnail 1" onclick="showFullSize('image3')">
+  <img class="thumbnail" src="https://th.bing.com/th?id=OIF.Ih%2fsH2gz5x2VGMHH0z2hqg&rs=1&pid=ImgDetMain" alt="Thumbnail 1" onclick="showFullSize('image4')">
+  <img class="thumbnail" src="https://cdn.sportslumo.com/wp-content/uploads/2021/04/18170013/RCB-1.jpg" alt="Thumbnail 1" onclick="showFullSize('image5')">
+  <img class="thumbnail" src="https://e1.pxfuel.com/desktop-wallpaper/615/154/desktop-wallpaper-chennai-super-kings-on-twitter-chennai-super-kings-team.jpg" alt="Thumbnail 1" onclick="showFullSize('image6')">
+  <img class="thumbnail" src="https://th.bing.com/th/id/R.bdd854d4473e4d0896c892c4b2d202e4?rik=cwXVSHjahPgABg&riu=http%3a%2f%2fimages.newindianexpress.com%2fuploads%2fuser%2fimagelibrary%2f2017%2f11%2f5%2foriginal%2fSri_Lanka_India_Crick_S_3.jpg&ehk=2n2kSVYHyozSiRluficOfUaLyzvLR%2fSxk%2bcIVwkpKzw%3d&risl=&pid=ImgRaw&r=0" alt="Thumbnail 1" onclick="showFullSize('image7')">
+  
+
+ 
+  <img id="image1" class="full-size-image" src="https://th.bing.com/th/id/OIP.3YD6BYo7QXfw5Y5d_79tGwHaFj?rs=1&pid=ImgDetMain" alt="Full Size Image 1">
+  <img id="image2" class="full-size-image" src="https://th.bing.com/th/id/OIP.rgPl5uUflVlLSVbfBLPXnAHaEK?w=1920&h=1080&rs=1&pid=ImgDetMain" alt="Full Size Image 2">
+  <img id="image3" class="full-size-image" src="https://th.bing.com/th/id/OIP.5sZbfMMpXob_KmZ1g5q1dgHaE8?rs=1&pid=ImgDetMain" alt="Full Size Image 3">
+  <img id="image4" class="full-size-image" src="https://th.bing.com/th?id=OIF.Ih%2fsH2gz5x2VGMHH0z2hqg&rs=1&pid=ImgDetMain" alt="Full Size Image 4">
+  <img id="image5" class="full-size-image" src="https://cdn.sportslumo.com/wp-content/uploads/2021/04/18170013/RCB-1.jpg" alt="Full Size Image 5">
+  <img id="image6" class="full-size-image" src="https://e1.pxfuel.com/desktop-wallpaper/615/154/desktop-wallpaper-chennai-super-kings-on-twitter-chennai-super-kings-team.jpg" alt="Full Size Image 6">
+  <img id="image7" class="full-size-image" src="https://th.bing.com/th/id/R.bdd854d4473e4d0896c892c4b2d202e4?rik=cwXVSHjahPgABg&riu=http%3a%2f%2fimages.newindianexpress.com%2fuploads%2fuser%2fimagelibrary%2f2017%2f11%2f5%2foriginal%2fSri_Lanka_India_Crick_S_3.jpg&ehk=2n2kSVYHyozSiRluficOfUaLyzvLR%2fSxk%2bcIVwkpKzw%3d&risl=&pid=ImgRaw&r=0" alt="Full Size Image 7">
+  
+</div>
+
+<script >
+  function showFullSize(imageId) {
+   
+    document.querySelectorAll('.full-size-image').forEach(image => {
+      image.style.display = 'none';
+    });
+
+
+    document.getElementById(imageId).style.display = 'block';
+  }
+</script>
+
+</body>
+</html>

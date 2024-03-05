@@ -1,0 +1,37 @@
+*{
+    background-color: rgb(227, 170, 96);
+   
+}
+.quiz{
+    text-align: center;
+    box-sizing: content-box;
+ 
+}
+.question{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 0 0 0;
+    }
+.question p{
+    font-size: 30px;
+    font-weight: bold;
+}
+h1{
+    font-size: 50px;
+}
+button{
+    font-size: 10px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color:#e50186;
+    color:#000;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #05d9e0;
+    transform: scale(1.5);
+}
